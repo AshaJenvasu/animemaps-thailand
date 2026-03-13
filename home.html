@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="th">
+  <head>
+    <meta charset="UTF-8"> <!--ถ้าไม่ใส่ ภาษาไทยในเว็บจะแสดงผลเป็นอักขระแปลกๆ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animemaps Thailand</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+
+  <body>
+
+    <!--Navigation Bar-->
+    <header>
+      <nav> <!--Navigation bar meaning-->
+        <div id="logo"> Animemaps Thailand </div>
+          <ul> <!--"Unordered List" (รายการแบบไม่เรียงลำดับ) -->
+            <li><a href="home.html">
+              <span>Home</span>
+              <span>หน้าหลัก</span>
+            </a></li> <!--(List Item) กำหนดรายการย่อยภายในรายการหลัก-->
+            <li><a href="event-calender.html">
+              <span>Event Calender</span>
+              <span>ตารางอีเว้น</span>
+            </a></li>
+            <li><a href="about-us.html">
+              <span>About us</span>
+              <span>เกี่ยวกับพวกเรา</span>
+            </a></li>
+          </ul>
+          <button id="search-btn">🔍</button>
+      </nav>
+    </header>
+
+    <!--SEARCH POPUP-->
+    <div id="search-popup">
+      <input type="text" placeholder="ค้นหาอีเว้น...">
+      <button id="close-search">X</button>
+    </div>
+
+    <!--SLIDESHOW-->
+    <section id="slideshow">
+      <div id="slideshow-container">
+
+      </div>
+    </section>
+
+    <!--EVENT RECOMMENDATION-->
+    <section id="recommendations">
+      <h1>รวบรวม Anime Events ทั่วไทย!</h1>
+      <div id="recommendations-layout">
+        <div id="event-container">
+          <h2>Event Recommendation!</h2>
+          <h3>อีเว้นมาแรงช่วงนี้!</h3>
+        </div>
+        <div id="upcoming-events">
+          <h2>Coming Soon!</h2>
+          <h3>กำลังมาเร็วๆนี้!</h3>
+        </div>
+      </div>
+    </section>
+
+    <script src = "/scripts/script.js"></script>
+  </body>
+</html>
