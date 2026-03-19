@@ -1,48 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="th">
   <head>
-    <meta charset="UTF-8"> <!--ถ้าไม่ใส่ ภาษาไทยในเว็บจะแสดงผลเป็นอักขระแปลกๆ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <!--ถ้าไม่ใส่ ภาษาไทยในเว็บจะแสดงผลเป็นอักขระแปลกๆ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animemaps Thailand</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/slideshow.css" />
+    <link rel="stylesheet" href="/styles/event.css" />
+
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-
     <!--Navigation Bar-->
     <header>
-      <nav> <!--Navigation bar meaning-->
-        <div id="logo"> Animemaps Thailand </div>
-          <ul> <!--"Unordered List" (รายการแบบไม่เรียงลำดับ) -->
-            <li><a href="home.html">
+      <nav>
+        <!--Navigation bar meaning-->
+        <div id="logo">Animemaps Thailand</div>
+        <ul>
+          <!--"Unordered List" (รายการแบบไม่เรียงลำดับ) -->
+          <li>
+            <a href="home.html">
               <span>Home</span>
               <span>หน้าหลัก</span>
-            </a></li> <!--(List Item) กำหนดรายการย่อยภายในรายการหลัก-->
-            <li><a href="event-calender.html">
+            </a>
+          </li>
+          <!--(List Item) กำหนดรายการย่อยภายในรายการหลัก-->
+          <li>
+            <a href="event-calender.html">
               <span>Event Calender</span>
               <span>ตารางอีเว้น</span>
-            </a></li>
-            <li><a href="about-us.html">
+            </a>
+          </li>
+          <li>
+            <a href="about-us.html">
               <span>About us</span>
               <span>เกี่ยวกับพวกเรา</span>
-            </a></li>
-          </ul>
-          <button id="search-btn">🔍</button>
+            </a>
+          </li>
+        </ul>
+        <button id="search-btn">🔍</button>
       </nav>
     </header>
 
     <!--SEARCH POPUP-->
     <div id="search-popup">
-      <input type="text" placeholder="ค้นหาอีเว้น...">
+      <input type="text" placeholder="ค้นหาอีเว้น..." />
       <button id="close-search">X</button>
     </div>
 
     <!--SLIDESHOW-->
     <section id="slideshow">
-      <div id="slideshow-container">
-
-      </div>
+      <button id="back-btn">&#8249;</button>
+      <div id="slideshow-container"></div>
+      <button id="next-btn">&#8250;</button>
     </section>
 
     <!--EVENT RECOMMENDATION-->
@@ -59,7 +77,6 @@
         </div>
       </div>
     </section>
-
-    <script src = "/scripts/script.js"></script>
+    <script src="/scripts/slides.js"></script>
   </body>
 </html>

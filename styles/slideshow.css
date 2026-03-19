@@ -1,0 +1,55 @@
+#slideshow {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden; /*[slide1][slide2][slide3]  ← อยู่นอกกรอบ แต่ overflow:hidden ซ่อนไว้*/
+}
+/*เราใช้ position: relative; เพื่อให้กล่องแม่เป็นจุดศูนย์กลาง
+
+เราใช้ overflow: hidden; เพื่อที่เวลาเราทำ Effect เช่น ให้รูปข้างในขยายใหญ่ขึ้นตอน Hover รูปที่ขยายจะได้ไม่ทะลุขอบกล่องออกมานั่นเอง*/
+
+#back-btn,
+#next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 40px;
+  padding: 8px 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#back-btn {
+  left: 16px;
+}
+#next-btn {
+  right: 16px;
+}
+
+#slideshow-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative; /*อยู่ตำแหน่งปกติ แต่เป็นจุดabsoluteแปะไว้*/
+}
+
+.slide {
+  position: absolute; /*บอกว่า "วางตัวเองโดยอ้างอิงจาก parent ที่เป็น relative"*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
