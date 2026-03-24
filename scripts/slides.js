@@ -4,21 +4,21 @@ const slides = [
     name: "Maruya #45 : The Carnival",
     date: "2026-03-15",
     location: "Union Mall",
-    image: "../images/Maruya.jpg",
+    image: "../images/nav/Maruya.jpg",
     link: "https://www.maruya.in.th/",
   },
   {
     name: "Muse Anime Festival 2026",
     date: "2026-01-01 - 2026-03-29",
     location: "MBK",
-    image: "../images/Muse.webp",
+    image: "../images/nav/Muse.webp",
     link: "https://www.mbk-center.co.th/event/muse-anime-festival-2026/",
   },
   {
     name: "PERSONA 5 Concert Asia Tour 2026",
     date: "2026-06-16",
     location: "Union Mall",
-    image: "../images/Persona.png",
+    image: "../images/nav/Persona.png",
     link: "https://www.eventpop.me/e/137068/persona-5-big-band-concert?aff=evp&fbclid=IwY2xjawQm7lJleHRuA2FlbQIxMABicmlkETF6V0tqaTBQTWlBcWh0S21mc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHsE50F-4MdIxkvJGaBU8Tf2R17ahd7BA99fFb21kl8GJmFM1YzhDuYsjAYux_aem_wew21xoVTC4KzBJmRzeB5g",
   },
 ];
@@ -73,7 +73,7 @@ function nextSlide() {
 //1 + 1 = 2 % 3 = 2  ไปslide2
 //2 + 1 = 3 % 3 = 0 วนกลับslide0
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 3500);
 // function ที่บอกให้ JS เรียก function ซ้ำๆ ทุกกี่ milliseconds
 
 // ==== ARROW BUTTONs =====

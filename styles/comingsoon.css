@@ -1,0 +1,39 @@
+/* ===== COMING SOON ===== */
+
+.coming-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #2a2a2a;
+  cursor: pointer;
+}
+
+.coming-card img {
+  flex-shrink: 0; /* บอกขนาดที่อยากได้ และยอมให้หด (1) */
+  width: 80%; /* ปลดล็อกให้ไหลตามแรงบีบ */
+  max-width: 200px; /* คุมไม่ให้ใหญ่เกินไป */
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.coming-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  gap: 4px;
+}
+
+.coming-info h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.coming-info p {
+  font-size: 15px;
+  color: #aaaaaa;
+}

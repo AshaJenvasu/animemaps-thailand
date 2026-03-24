@@ -46,3 +46,27 @@ nav ul li a span:last-child {
 #search-popup {
   display: none;
 }
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav ul {
+    gap: 12px;
+  }
+
+  nav ul li a span:first-child {
+    font-size: 12px;
+  }
+
+  nav ul li a span:last-child {
+    font-size: 10px;
+  }
+  #search-btn {
+    margin-left: 20px;
+  }
+}
