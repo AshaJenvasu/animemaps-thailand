@@ -56,7 +56,7 @@
   pointer-events: auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   #slideshow {
     height: 300px;
     width: 100%;

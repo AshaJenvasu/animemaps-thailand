@@ -46,7 +46,7 @@ function displayEvents() {
     <h3>${event.name}</h3>
     <p>📅 ${event.date}</p>
     <p>📍${event.location}</p>
-    <p> ${event.description}</p>
+    <p class="event-description"> ${event.description}</p>
     </div>
     `;
     card.addEventListener("click", () => window.open(event.link, "_blank"));

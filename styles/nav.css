@@ -1,16 +1,26 @@
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: #1a1a1a;
+  background-color: #ff6b6b;
   padding: 10px 40px;
 }
 
+.nav-mobile {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 #logo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  color: #ff6b6b;
-  padding-left: 20px;
+  color: white;
+  display: flex;
 }
 
 nav ul {
@@ -28,19 +38,43 @@ nav ul li a {
 nav ul li a span:first-child {
   font-weight: 600;
   color: #ffffff;
+  transition: 0.3s ease-in;
 }
 
 nav ul li a span:last-child {
   font-size: 14px;
-  color: #aaaaaa;
+  color: #e0dfdf;
+  margin-top: -2px;
 }
 
-＃search-btn {
-  background-color: none;
+nav ul li a span:first-child:hover {
+  color: #7f5151;
+}
+
+#search-btn {
+  background: none;
   border: none;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+#search-btn div:first-child {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#search-btn div:last-child {
+  font-size: 14px;
+  color: #e0dfdf;
+  margin-top: 3px;
+}
+
+#search-btn div:first-child:hover {
+  color: #7f5151;
+  transition: 0.3s ease-in;
 }
 
 #search-popup {
@@ -49,24 +83,53 @@ nav ul li a span:last-child {
 
 @media (max-width: 768px) {
   nav {
-    flex-wrap: wrap;
+    padding-bottom: 0px;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 8px;
+    justify-content: space-evenly;
+  }
+
+  .nav-mobile img {
+    width: 100%;
+    height: 100px;
+  }
+
+  /* nav {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  #logo {
+    align-self: center;
+  }
+
+  .nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   nav ul {
-    gap: 12px;
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    order: 1;
   }
 
-  nav ul li a span:first-child {
-    font-size: 12px;
-  }
-
-  nav ul li a span:last-child {
-    font-size: 10px;
-  }
   #search-btn {
-    margin-left: 20px;
-  }
+    order: 2;
+    align-self: center;
+  } 
+*/
 }

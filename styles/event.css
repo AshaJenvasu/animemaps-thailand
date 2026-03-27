@@ -1,21 +1,23 @@
 #recommendations {
   padding: 40px;
+  color: #630000;
 }
 
 #recommendations h1 {
   text-align: center;
   font-size: 40px;
   margin-bottom: 32px;
-  color: #ff6b6b;
+  color: #880015;
 }
 
 #recommendations h3 {
   font-size: 20px;
-  color: #aaaaaa;
+  color: #af1f2f;
 }
 
 #recommendations .event-info h3 {
-  color: #ffffff;
+  color: #630000;
+  font-weight: bold;
 }
 
 #recommendations-layout {
@@ -42,6 +44,11 @@
   align-items: center;
 }
 
+.event-card:hover {
+  background-color: var(--hover);
+  transition: 0.3s ease-in;
+}
+
 .event-card img {
   height: 250px;
   width: 40%;
@@ -57,13 +64,17 @@
   flex: 1;
 }
 
+.event-info p.event-description {
+  color: rgb(90, 76, 76);
+}
+
 .event-type {
-  background-color: #ff6b6b;
   color: white;
   font-size: 15px;
   padding: 2px 8px;
   border-radius: 4px;
   width: fit-content;
+  background-color: var(--main);
 }
 
 .event-info h3 {
@@ -74,10 +85,10 @@
 
 .event-info p {
   font-size: 20px;
-  color: #aaaaaa;
+  color: #7f7f7f;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .event-card {
     flex-direction: column;
   }
