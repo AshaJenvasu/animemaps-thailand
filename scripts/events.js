@@ -5,7 +5,7 @@ const events = [
     date: "2026-03-15",
     location: "Union Mall",
     type: "Cosplay",
-    image: "../images/event-recommendation/Maruya.png",
+    image: "images/event-recommendation/Maruya.png",
     link: "https://www.maruya.in.th/",
     description:
       "Maruya #45 งานมหกรรมรวมพลชาวคอสเพลย์และคนรักการ์ตูนที่ใหญ่ที่สุดงานหนึ่งในไทย! เตรียมพบกับบูธสินค้าทำมือ (Doujinshi), กิจกรรมบนเวทีสุดสนุก และพื้นที่สำหรับถ่ายรูปคอสเพลย์แบบจัดเต็ม ณ ศูนย์การค้า Union Mall!",
@@ -15,7 +15,7 @@ const events = [
     date: "2026-01-10 - 2026-03-29",
     location: "MBK Center",
     type: "Exhibition",
-    image: "../images/event-recommendation/Muse.png",
+    image: "images/event-recommendation/Muse.png",
     link: "https://www.mbk-center.co.th/event/muse-anime-festival-2026/",
     description:
       "Muse Anime Festival 2026 สวรรค์ของคนรักอนิเมะใจกลางเมือง! พบกับ 18 โซนถ่ายภาพสุดอลังการจากเรื่องดังอย่าง Dandadan, เกิดใหม่ทั้งทีก็เป็นสไลม์ไปซะแล้ว และ Frieren แถมยังมีสินค้าลิขสิทธิ์กว่า 1,000 รายการ และคาเฟ่ธีมสุดคิ้วท์ให้ได้นั่งพักผ่อนกันด้วย ที่สำคัญ... เข้าชมฟรี นะจ๊ะ! ที่ MBK Center ชั้น 4 โซน A",
@@ -25,7 +25,7 @@ const events = [
     date: "2026-06-16",
     location: "Union Mall",
     type: "Concert",
-    image: "../images/event-recommendation/Persona.png",
+    image: "images/event-recommendation/Persona.png",
     link: "https://www.eventpop.me/e/137068/persona-5-big-band-concert",
     description:
       "ดำดิ่งสู่โลกของ Persona 5 กับดนตรีสไตล์ Big Band สุดแจ๊ส! นำทีมโดยศิลปินเสียงทรงพลัง Lyn ผู้ร้องเพลงประกอบเกม และวงบิ๊กแบนด์คุณภาพเยี่ยมภายใต้การควบคุมของ Charlie Rosen (เจ้าของรางวัล Grammy) งานนี้จัดเต็มทั้งแนว Jazz, Funk และ Soul ที่จะทำให้หัวใจเต้นแรงเหมือนอยู่ใน Metaverse เลยละ!",
