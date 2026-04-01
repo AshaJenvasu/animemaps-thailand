@@ -49,3 +49,9 @@ searchInput.addEventListener("input", () => {
 → forEach สร้าง card แสดงผลทีละอัน
 → user เห็นผลลัพธ์ทันทีแบบ real-time*/
 });
+// ==== REMOVE SEARCH RESULTS =====
+searchPopup.addEventListener("click", (event) => {
+  if (event.target === searchPopup) {
+    searchPopup.classList.remove("active");
+  }
+});

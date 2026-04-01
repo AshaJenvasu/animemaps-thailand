@@ -89,17 +89,53 @@ nav ul li a span:first-child:hover {
   align-items: center;
 }
 
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  color: black;
+}
+
+.search-item:hover {
+  background-color: #cacaca;
+}
+
+.search-item img:hover {
+  opacity: 0.8;
+}
+
+.search-item img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
 #search-popup.active {
   display: flex;
 }
 
 #search-popup input {
-  width: 500px;
+  width: 700px;
   padding: 16px;
   font-size: 18px;
   border-radius: 8px;
   border: none;
   outline: none;
+}
+
+#search-results {
+  position: absolute;
+  top: 210px;
+  background: white;
+  width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 #close-search {
