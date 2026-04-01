@@ -55,3 +55,31 @@ searchPopup.addEventListener("click", (event) => {
     searchPopup.classList.remove("active");
   }
 });
+
+// ===== SEARCH MOBILE =====
+const searchInputMobile = document.querySelector("#search-popup-mobile input");
+const searchResultsMobile = document.createElement("div");
+searchResultsMobile.id = "search-results-mobile";
+document.querySelector("#search-popup-mobile").appendChild(searchResultsMobile);
+
+searchInputMobile.addEventListener("input", () => {
+  const keyword = searchInputMobile.value.toLowerCase();
+  searchResultsMobile.innerHTML = "";
+
+  if (keyword === "") return;
+
+  const results = events.filter((event) =>
+    event.name.toLowerCase().includes(keyword),
+  );
+
+  results.forEach((event) => {
+    const item = document.createElement("div");
+    item.classList.add("search-item");
+    item.innerHTML = `
+      <img src="${event.image}" alt="${event.name}">
+     
+    `;
+    item.addEventListener("click", () => window.open(event.link, "_blank"));
+    searchResultsMobile.appendChild(item);
+  });
+});
