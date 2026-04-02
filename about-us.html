@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        corePlugins: {
+          preflight: false, // ← ปิด Tailwind reset
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">Animemaps Thailand</div>
+        <!--Navigation Bar--Mobile-->
+        <div class="nav-mobile">
+          <a href="index.html">
+            <img src="icon/home.png" alt="home" />
+          </a>
+
+          <a href="event-calender.html">
+            <img src="icon/event-calendar.png" alt="event-calendar" />
+          </a>
+
+          <a href="about-us.html">
+            <img src="icon/about-us.png" alt="about-us" />
+          </a>
+          <div id="search-popup-mobile">
+            <input type="search" placeholder="ค้นหาอีเว้น..." />
+          </div>
+        </div>
+        <!--Navigation Bar-->
+        <div class="nav-menu">
+          <ul>
+            <!--"Unordered List" (รายการแบบไม่เรียงลำดับ) -->
+            <li>
+              <a href="index.html">
+                <span>Home</span>
+                <span>หน้าหลัก</span>
+              </a>
+            </li>
+            <!--(List Item) กำหนดรายการย่อยภายในรายการหลัก-->
+            <li>
+              <a href="event-calender.html">
+                <span>Event Calender</span>
+                <span>ตารางอีเว้น</span>
+              </a>
+            </li>
+            <li>
+              <a href="about-us.html">
+                <span>About us</span>
+                <span>เกี่ยวกับพวกเรา</span>
+              </a>
+            </li>
+          </ul>
+          <button id="search-btn">
+            <div class="search-icon">Search</div>
+            <div>ค้นหา</div>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!--SEARCH POPUP-->
+    <div id="search-popup">
+      <input type="text" placeholder="ค้นหาอีเว้น..." />
+      <button id="close-search">X</button>
+    </div>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section
+        class="flex items-center justify-between px-16 py-12 bg-gray-900"
+      >
+        <div class="flex-1">
+          <h1 class="text-4xl font-bold text-white mb-4">About Us</h1>
+          <p class="text-gray-400 text-lg">
+            Animemaps Thailand คือเว็บรวบรวมงาน Anime Events ในไทย ทั้ง Cosplay,
+            Pop-up Store, Concert และ Exhibition ในไทย!
+          </p>
+        </div>
+        <div class="flex-1 flex justify-end">
+          <img
+            src="images/about-us/about-us.jpg"
+            alt="about us"
+            class="w-80 rounded-lg"
+          />
+        </div>
+      </section>
+
+      <!-- DETAIL SECTION -->
+      <section class="px-16 py-12 flex justify-center">
+        <div class="max-w-3xl mx-auto bg-gray-800 rounded-2xl p-10">
+          <h2 class="text-3xl font-bold text-white mb-6">เกี่ยวกับเรา</h2>
+          <p class="text-gray-400 text-lg leading-relaxed mb-4">
+            เว็บไซต์นี้เกิดขึ้นจากความรักในอนิเมะและวัฒนธรรมญี่ปุ่น
+            ในฐานะคนที่ไปงาน Anime Events ในไทยมาตลอด
+            ผมมักเจอปัญหาที่ต้องค้นหาข้อมูลงานจากหลายแพลตฟอร์ม
+          </p>
+          <p class="text-gray-400 text-lg leading-relaxed">
+            พอเริ่มเรียนเขียนโค้ดด้วยตัวเอง ผมเห็นโอกาสที่จะแก้ปัญหานี้
+            Animemaps Thailand คือ project แรกของผม สร้างขึ้นด้วยการเขียนโค๊ด
+            เพื่อให้แฟนอนิเมะทั่วไทยสามารถค้นหางาน Cosplay, Pop-up Store,
+            Concert และ Exhibition ได้ในที่เดียวครับ!
+          </p>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer>
+        <div class="footer-container">
+          <div id="footer-logo">Animemaps Thailand</div>
+          <div class="footer-links">
+            <a href="about-us.html">About Us</a>
+            <span>|</span>
+            <a href="https://www.linkedin.com/in/chaiyawat-jenvasu-a5a606335"
+              >Contact Us</a
+            >
+          </div>
+          <p class="footer-copyright">
+            © 2026 Animemaps Thailand. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="scripts/events.js"></script>
+    <script src="scripts/search.js"></script>
+  </body>
+</html>
