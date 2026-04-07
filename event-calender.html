@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+    <!--Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">Animemaps Thailand</div>
+        <!--Navigation Bar--Mobile-->
+        <div class="nav-mobile">
+          <a href="index.html">
+            <img src="icon/home.png" alt="home" />
+          </a>
+
+          <a href="event-calender.html">
+            <img src="icon/event-calendar.png" alt="event-calendar" />
+          </a>
+
+          <a href="about-us.html">
+            <img src="icon/about-us.png" alt="about-us" />
+          </a>
+          <div id="search-popup-mobile">
+            <input type="search" placeholder="ค้นหาอีเว้น..." />
+          </div>
+        </div>
+        <!--Navigation Bar-->
+        <div class="nav-menu">
+          <ul>
+            <!--"Unordered List" (รายการแบบไม่เรียงลำดับ) -->
+            <li>
+              <a href="index.html">
+                <span>Home</span>
+                <span>หน้าหลัก</span>
+              </a>
+            </li>
+            <!--(List Item) กำหนดรายการย่อยภายในรายการหลัก-->
+            <li>
+              <a href="event-calender.html">
+                <span>Event Calender</span>
+                <span>ตารางอีเว้น</span>
+              </a>
+            </li>
+            <li>
+              <a href="about-us.html">
+                <span>About us</span>
+                <span>เกี่ยวกับพวกเรา</span>
+              </a>
+            </li>
+          </ul>
+          <button id="search-btn">
+            <div class="search-icon">Search</div>
+            <div>ค้นหา</div>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- SEARCH POPUP -->
+    <div id="search-popup">
+      <input type="text" placeholder="ค้นหาอีเว้น..." />
+      <button id="close-search">X</button>
+    </div>
+    <!-- MAIN CONTENT -->
+    <main class="max-w-5xl mx-auto px-8 py-12">
+      <!-- FILTER BAR -->
+      <div class="flex flex-wrap gap-4 mb-8">
+        <!-- กรองประเภท -->
+        <select
+          id="filter-type"
+          class="px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 cursor-pointer"
+        >
+          <option value="all">ประเภทอีเว้น</option>
+          <option value="cosplay">Cosplay</option>
+          <option value="concert">Concert</option>
+          <option value="exhibition">Exhibition</option>
+        </select>
+
+        <!-- กรองเดือน -->
+        <select
+          id="filter-month"
+          class="px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 cursor-pointer"
+        >
+          <option value="all">ทุกเดือน</option>
+          <option value="1">มกราคม</option>
+          <option value="2">กุมภาพันธ์</option>
+          <option value="3">มีนาคม</option>
+          <option value="4">เมษายน</option>
+          <option value="5">พฤษภาคม</option>
+          <option value="6">มิถุนายน</option>
+          <option value="7">กรกฎาคม</option>
+          <option value="8">สิงหาคม</option>
+          <option value="9">กันยายน</option>
+          <option value="10">ตุลาคม</option>
+          <option value="11">พฤศจิกายน</option>
+          <option value="12">ธันวาคม</option>
+        </select>
+      </div>
+
+      <!-- EVENT LIST -->
+      <div id="calendar-container"></div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div id="footer-logo">Animemaps Thailand</div>
+        <div class="footer-links">
+          <a href="about-us.html">About Us</a>
+          <span>|</span>
+          <a href="https://www.linkedin.com/in/chaiyawat-jenvasu-a5a606335"
+            >Contact Us</a
+          >
+        </div>
+        <p class="footer-copyright">
+          © 2026 Animemaps Thailand. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="scripts/events.js"></script>
+    <script src="scripts/comingsoon.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/calendar.js"></script>
+  </body>
+</html>
