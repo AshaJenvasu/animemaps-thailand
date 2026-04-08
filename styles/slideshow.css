@@ -56,7 +56,30 @@
   pointer-events: auto;
 }
 
+#calendar-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 107, 107, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 30px;
+  z-index: 10;
+  transition: 0.3s;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+#calendar-btn:hover {
+  background: #e5a9a9;
+}
+
 @media (max-width: 768px) {
+  #calendar-btn {
+    font-size: 15px;
+  }
+
   #slideshow {
     height: 300px;
     width: 100%;

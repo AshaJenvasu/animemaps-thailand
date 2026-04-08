@@ -50,7 +50,7 @@ function displayCalendarEvents(events) {
   events.forEach((event) => {
     const card = document.createElement("div");
     card.className =
-      "flex gap-4 p-4 mb-4 border-b border-gray-700 cursor-pointer hover:bg-gray-800 transition rounded-lg";
+      "flex gap-4 p-4 mb-4 border-b border-gray-700 cursor-pointer hover:bg-rose-200 transition rounded-lg";
     card.innerHTML = `
      <img src="${event.image}" class="w-40 h-28 object-cover rounded-lg flex-shrink-0" alt="${event.name}">
       <div class="calendar-info">
@@ -78,6 +78,10 @@ function filterEvents() {
   const type = document.querySelector("#filter-type").value;
   const month = document.querySelector("#filter-month").value;
 
+  const searchText = document
+    .querySelector("#search-input")
+    .value.toLowerCase();
+
   let filtered = calendarEvents;
 
   if (type != "all") {
@@ -92,6 +96,15 @@ function filterEvents() {
       return selectedMonth >= startMonth && selectedMonth <= endMonth;
     });
   }
+
+  if (searchText !== "") {
+    filtered = filtered.filter(
+      (event) =>
+        event.name.toLowerCase().includes(searchText) ||
+        event.description.toLowerCase().includes(searchText),
+    );
+  }
+
   displayCalendarEvents(filtered);
 }
 
@@ -99,3 +112,4 @@ document.querySelector("#filter-type").addEventListener("change", filterEvents);
 document
   .querySelector("#filter-month")
   .addEventListener("change", filterEvents);
+document.querySelector("#search-input").addEventListener("input", filterEvents);

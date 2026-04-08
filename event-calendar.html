@@ -32,7 +32,7 @@
             <img src="icon/home.png" alt="home" />
           </a>
 
-          <a href="event-calender.html">
+          <a href="event-calendar.html">
             <img src="icon/event-calendar.png" alt="event-calendar" />
           </a>
 
@@ -55,8 +55,8 @@
             </li>
             <!--(List Item) กำหนดรายการย่อยภายในรายการหลัก-->
             <li>
-              <a href="event-calender.html">
-                <span>Event Calender</span>
+              <a href="event-calendar.html">
+                <span>Event Calendar</span>
                 <span>ตารางอีเว้น</span>
               </a>
             </li>
@@ -113,6 +113,20 @@
           <option value="11">พฤศจิกายน</option>
           <option value="12">ธันวาคม</option>
         </select>
+
+        <!-- SEARCH BAR -->
+        <div class="relative w-64">
+          <span
+            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+          >
+          </span>
+          <input
+            type="text"
+            id="search-input"
+            class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-full leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-rose-300 focus:border-rose-300 sm:text-sm transition duration-150 ease-in-out"
+            placeholder="ค้นหาชื่ออีเว้น..."
+          />
+        </div>
       </div>
 
       <!-- EVENT LIST -->

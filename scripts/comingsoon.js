@@ -2,21 +2,21 @@
 const comingSoon = [
   {
     name: "AFA Thailand 2026",
-    date: "2026-05-01",
+    date: "2026-05-30",
     type: "Exhibition",
     image: "images/event-coming-soon/AFA.png",
     link: "https://animefestival.asia/afath26",
   },
   {
     name: "AFA Thailand 2026",
-    date: "2026-05-01",
+    date: "2026-05-30",
     type: "Exhibition",
     image: "images/event-coming-soon/AFA.png",
     link: "https://animefestival.asia/afath26",
   },
   {
     name: "AFA Thailand 2026",
-    date: "2026-05-01",
+    date: "2026-05-30",
     type: "Exhibition",
     image: "images/event-coming-soon/AFA.png",
     link: "https://animefestival.asia/afath26",
