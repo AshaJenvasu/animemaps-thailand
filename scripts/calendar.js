@@ -71,6 +71,13 @@ function displayCalendarEvents(events) {
   });
 }
 
+// ===== SORT EVENTS  =====
+calendarEvents.sort(
+  //Built-in Method
+  (event1, event2) => new Date(event1.startDate) - new Date(event2.startDate),
+  //ข้อความ (Text) เอามาบวกลบคูณหารกันทางคณิตศาสตร์ไม่ได้ กลไกลับของ JS: เมื่อวันที่ถูกแปลงเป็น Date Object แล้ว JS จะแอบแปลงมันเป็น ตัวเลข (Milliseconds)
+);
+
 displayCalendarEvents(calendarEvents);
 
 // ===== FILTER FUNCTION =====
