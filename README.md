@@ -2,7 +2,10 @@
 > The most comprehensive event aggregator for Anime, Cosplay, and Pop-up Stores in Thailand.
 
 [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen.svg)(https://animemaps-thailand.vercel.app/)
-
+--
+System Design & Software Architecture 
+https://www.figma.com/board/otlg1VACLogb10l3FjtgE8/Animemaps-Thailand?node-id=0-1&t=eqeOpP72shubRskL-1
+--
 ## 🌟 Overview
 **Animemaps Thailand** is a specialized web platform designed to solve the problem of fragmented information regarding anime events in Thailand. Whether it's a major convention like AFA, a local Cosplay gathering, or a limited-time themed cafe, this project brings them all into one unified, easy-to-navigate interface.
 
